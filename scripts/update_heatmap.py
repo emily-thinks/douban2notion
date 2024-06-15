@@ -18,7 +18,7 @@ def move_and_rename_file(type):
     target_path = os.path.join(target_dir, new_filename)
 
     # 移动并重命名文件
-    shutil.move(source_path, target_path)
+    shutil.copy(source_path, target_path)
     # 返回移动后的文件路径
     return target_path
 if __name__ == "__main__":
